@@ -43,8 +43,10 @@ export default function Home() {
         <ProjectCard
           name="Reddit Micro"
           description="A minimalist Reddit client that lets users browse, search, and view posts and comments in a simplified interface."
-          liveLink="https://redditmicro.netlify.app"
-          githubLink="https://github.com/DeeKayMA/reddit_micro"
+          links={{
+            "Live": "https://redditmicro.netlify.app",
+            "GitHub": "https://github.com/DeeKayMA/reddit_micro"
+          }}
           tools={["React", "CSS", "Reddit API", "Netlify"]}
         />
       </section>
