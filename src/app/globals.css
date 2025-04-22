@@ -1,8 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-/* @import 'tw-animate-css/index.css'; */
 
-/* If tw-animate-css is needed run npm install tw-animate-css */
+
 
 @custom-variant dark (&:is(.dark *));
 
