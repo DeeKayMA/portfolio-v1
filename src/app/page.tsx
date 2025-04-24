@@ -8,7 +8,8 @@ import { CertificateCard } from "@/components/certificateCard/certificateCard";
 export default function Home() {
   const projectListItem = "list-none lg:p-4 group-hover/list:opacity-50 hover:opacity-100 hover:bg-slate-800/50 border border-slate-800/0 hover:border-slate-800/50 hover:border-t-slate-700/50 hover:shadow-sm hover:shadow-slate-950/10 transition-all duration-300 ease-in-out rounded mb-12"
   const experienceListItem = "list-none lg:p-4 border border-slate-800/0 transition-all duration-300 ease-in-out rounded mb-12"
-  const sectionTitle = "lg:p-4 py-4 mb-4 sticky top-0 bg-slate-900 text-slate-200 font-semibold z-10"
+  const educationListItem = "list-none lg:p-4 group-hover/edu:opacity-50 hover:opacity-100 hover:bg-slate-800/50 border border-slate-800/0 hover:border-slate-800/50 hover:border-t-slate-700/50 hover:shadow-sm hover:shadow-slate-950/10 transition-all duration-300 ease-in-out rounded mb-12"
+  const sectionTitle = "text-lg font-bold lg:text-md lg:font-medium lg:p-4 py-4 mb-4 sticky top-0 bg-slate-900 text-slate-200 z-10"
   return (
     <div className="bg-slate-900 text-slate-400 flex flex-col lg:flex-row lg:min-h-screen m-0 py-12 px-6 md:py-16 md:px-12 lg:p-24 lg:gap-4 gap-16" >
     {/* This is the navigation part of the page */}
@@ -105,6 +106,32 @@ export default function Home() {
         </ul>
         
       </section>
+      {/* EDUCATION */}
+      <section aria-label="Experience" id="experience">
+        <h2 className={sectionTitle}>Education</h2>
+        <ul className="group/list">
+          <li className={educationListItem}>
+            <CertificateCard
+              certificate="Front End Developer"
+              company="Codecademy"
+              year="2025"
+              description="Codecademy’s Front-End Engineer Career Path — covered HTML, CSS, JavaScript, React, Redux, Git, and web design fundamentals to build responsive, interactive web applications."
+              link="https://www.codecademy.com"
+              />
+          </li>
+          <li className={educationListItem}>
+            <CertificateCard
+              certificate="UX Design Principles"
+              company="Udemy"
+              year="2021"
+              description="Developed custom-coded WordPress forms and responsive landing pages tailored to client specs."
+              link="https://www.codecademy.com"
+              />
+          </li>
+         
+        </ul>
+
+      </section>
       {/* EXPERIENCE */}
       <section aria-label="Experience" id="experience">
         <h2 className={sectionTitle}>Experience</h2>
@@ -129,21 +156,6 @@ export default function Home() {
           </li>
         </ul>
         
-      </section>
-      {/* EDUCATION */}
-      <section aria-label="Experience" id="experience">
-        <h2 className={sectionTitle}>Education</h2>
-        <ul>
-          <li className={experienceListItem}>
-            <CertificateCard
-              certificate="Front End Developer"
-              company="Freelance"
-              year="2020 - Present"
-              description="Developed custom-coded WordPress forms and responsive landing pages tailored to client specs."
-              link="www.codecademy.com"
-              />
-          </li>
-        </ul>
       </section>
       <footer className="lg:px-4">
         <p>The interface was crafted in Figma and built in Visual Studio Code using Next.js. Styling and subtle animations, powered by Tailwind CSS, bring it to life, while seamless deployment is handled through Vercel. The versatile Inter typeface complements the clean, modern aesthetic.</p>
