@@ -1,14 +1,17 @@
 'use client'
-import Image from "next/image";
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import { Github, Mail, Twitter, Linkedin } from 'lucide-react';
+
 // import { Inter } from "next/font/google";
 import { ProjectCard } from "@/components/projectCard/projectCard";
 import {ExperienceCard} from "@/components/experienceCard/experienceCard";
 import { CertificateCard } from "@/components/certificateCard/certificateCard";
 
 export default function Home() {
-  const projectListItem = "list-none lg:p-4 group-hover/list:opacity-50 hover:opacity-100 hover:bg-slate-800/50 border border-slate-800/0 hover:border-slate-800/50 hover:border-t-slate-700/50 hover:shadow-sm hover:shadow-slate-950/10 transition-all duration-300 ease-in-out rounded mb-12"
+  const projectListItem = "list-none lg:p-4 group-hover/list:opacity-40 hover:opacity-100 hover:bg-slate-800/50 border border-slate-800/0 hover:border-slate-800/50 hover:border-t-slate-700/50 hover:shadow-sm hover:shadow-slate-950/10 transition-all duration-300 ease-in-out rounded mb-12"
   const experienceListItem = "list-none lg:p-4 border border-slate-800/0 transition-all duration-300 ease-in-out rounded mb-12"
-  const educationListItem = "list-none lg:p-4 group-hover/edu:opacity-50 hover:opacity-100 hover:bg-slate-800/50 border border-slate-800/0 hover:border-slate-800/50 hover:border-t-slate-700/50 hover:shadow-sm hover:shadow-slate-950/10 transition-all duration-300 ease-in-out rounded mb-12"
+  const educationListItem = "list-none lg:p-4 group-hover/edu:opacity-40 hover:opacity-100 hover:bg-slate-800/50 border border-slate-800/0 hover:border-slate-800/50 hover:border-t-slate-700/50 hover:shadow-sm hover:shadow-slate-950/10 transition-all duration-300 ease-in-out rounded mb-12"
   const sectionTitle = "text-lg font-bold lg:text-md lg:font-medium lg:p-4 py-4 mb-4 sticky top-0 bg-slate-900 text-slate-200 z-10"
   return (
     <div className="bg-slate-900 text-slate-400 flex flex-col lg:flex-row lg:min-h-screen m-0 py-12 px-6 md:py-16 md:px-12 lg:p-24 lg:gap-4 gap-16" >
@@ -21,8 +24,9 @@ export default function Home() {
 
         <nav aria-label="Primary navigation menu inpage links" className="mt-16 lg:block hidden"> 
           <ul className="flex flex-col gap-4">
-            <li><a href="#about">About</a></li>
+            {/* <li><a href="#about">About</a></li> */}
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
           </ul>
         </nav>
@@ -30,11 +34,35 @@ export default function Home() {
         
       
       <section aria-label="Social links">
-       <ul className="flex flex-row">
-        <li><a href="https://github.com/DeeKayMA" aria-label="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/diquankerr" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        <li><a href="https://x.com/Dquan028" aria-label="X" target="_blank" rel="noopener noreferrer">X</a></li>
-        <li><a href="mailto:diquankerr@gmail.com" aria-label="Gmail" target="_blank" rel="noopener noreferrer">Gmail</a></li>
+       <ul className="flex flex-row -ml-3">
+        <li>
+          <Link href="https://github.com/DeeKayMA" aria-label="GitHub" target="_blank" rel="noopener noreferrer" className="cursor-pointer mx-0">
+            <Button variant="link" size="icon" className="cursor-pointer rounded hover:text-teal-400 mx-0">
+              <Github size={40}/>
+            </Button>
+          </Link>
+        </li>
+        <li>
+          <Link href="https://linkedin.com/in/diquankerr" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+            <Button variant="link" size="icon" className="cursor-pointer rounded hover:text-teal-400">
+              <Linkedin size={40}/>
+            </Button>
+          </Link>
+        </li>
+        <li>
+          <Link href="https://x.com/Dquan028" aria-label="X" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+            <Button variant="link" size="icon" className="cursor-pointer rounded hover:text-teal-400 ">
+              <Twitter size={40}/>
+            </Button>
+          </Link>
+        </li>
+        <li>
+          <Link href="mailto:diquankerr@gmail.com" aria-label="Email" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+            <Button variant="link" size="icon" className="cursor-pointer rounded hover:text-teal-400">
+              <Mail size={40}/>
+            </Button>
+          </Link>
+        </li>
        </ul>
       </section>
     </aside>
@@ -107,12 +135,12 @@ export default function Home() {
         
       </section>
       {/* EDUCATION */}
-      <section aria-label="Experience" id="experience">
+      <section aria-label="Education" id="education">
         <h2 className={sectionTitle}>Education</h2>
-        <ul className="group/list">
+        <ul className="group/edu">
           <li className={educationListItem}>
             <CertificateCard
-              certificate="Front End Developer"
+              certificate="Front End Engineer Career Path"
               company="Codecademy"
               year="2025"
               description="Codecademy’s Front-End Engineer Career Path — covered HTML, CSS, JavaScript, React, Redux, Git, and web design fundamentals to build responsive, interactive web applications."
@@ -121,10 +149,10 @@ export default function Home() {
           </li>
           <li className={educationListItem}>
             <CertificateCard
-              certificate="UX Design Principles"
+              certificate="User Experience Design Essentials" 
               company="Udemy"
               year="2021"
-              description="Developed custom-coded WordPress forms and responsive landing pages tailored to client specs."
+              description="Completed the 'User Experience Design Essentials — Adobe XD UI UX Design' course on Udemy, learning to design and prototype user interfaces using Adobe XD.​"
               link="https://www.codecademy.com"
               />
           </li>

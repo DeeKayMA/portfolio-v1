@@ -23,7 +23,7 @@ export function ExperienceCard({ role, company, year, description, tools }: Expe
 
 
     return (
-    <div className=" flex flex-col-reverse lg:flex-row gap-10 lg:gap-4 ">
+    <div className=" flex flex-col lg:flex-row gap-2 lg:gap-4 ">
         {/* Left Content */}
         <div className=" w-full sm:w-1/2 md:w-1/2 lg:w-1/4">{year}</div>
 
@@ -31,7 +31,7 @@ export function ExperienceCard({ role, company, year, description, tools }: Expe
         <div className="flex flex-col gap-4 w-full lg:w-3/4">
 
             {/* Experience Title */}
-            <h3 className={`font-medium text-slate-200`}>{role} · {company}</h3>
+            <h3 className={`font-medium text-slate-200 flex flex-row items-center gap-1`}>{role}<span className="text-2xl px-1">·</span>{company}</h3>
             {/* Need to add is hovered to arrow icon and move it to top right  */}
 
             {/* Experience Description */}

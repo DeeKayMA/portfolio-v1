@@ -24,7 +24,7 @@ export function CertificateCard({ certificate, company, description, link, year 
 
 
     return (
-    <div className=" flex flex-col-reverse lg:flex-row gap-10 lg:gap-4 cursor-pointer group/project" 
+    <div className=" flex flex-col lg:flex-row gap-2 lg:gap-4 cursor-pointer group/project" 
     onClick={() => {
         if (!link) return;
         window.open(link, "_blank")
@@ -39,7 +39,7 @@ export function CertificateCard({ certificate, company, description, link, year 
         <div className="flex flex-col gap-4 w-full lg:w-3/4">
 
             {/* Project Name */}
-            <a><h3 className={`font-medium text-slate-200 group-hover/project:text-teal-400 `}><span className="flex flex-row items-center gap-1">{certificate} · {company}{(link) && arrowUpRightSVG}</span></h3></a>
+            <a><h3 className={`font-medium text-slate-200 group-hover/project:text-teal-400 flex flex-row items-center gap-1`}>{certificate}<span className="text-2xl px-1">·</span>{company}{(link) && arrowUpRightSVG}</h3></a>
 
             {/* Project Description */}
             <p className="text-sm">{description}</p>
