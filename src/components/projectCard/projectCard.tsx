@@ -1,50 +1,71 @@
+'use client'
+
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
+import { useState } from "react"
 
-const linkSVG = <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
 
+// 
 
 type ProjectCardProps = {
     name: string
     description: string
     links: { [key: string]: string }
     tools: string[]
+    img: string
 
   }
 
-export function ProjectCard({ name, description, links, tools }: ProjectCardProps) {
+export function ProjectCard({ name, description, links, tools, img }: ProjectCardProps) {
+    const [isHovered, setIsHovered] = useState(false)
+    const router = useRouter()
+    const linkSVG = <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+    const arrowUpRightSVG = <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`${isHovered ? '' : 'transition-all duration-100 ease-in-out group-hover/project:-translate-y-1 group-hover/project:translate-x-1'}`}><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
 
+    
 
 
     return (
-    <a className="flex flex-row gap-4 p-4" href={links["Live"]} target="_blank" rel="noopener noreferrer">
+    <div className=" flex flex-col-reverse lg:flex-row gap-10 lg:gap-4 cursor-pointer group/project" 
+    onClick={() => {
+        //Tries to open the live link, if not available it opens the GitHub link
+        // If both are not available, it does nothing
+        const url = links["Live"] || links["GitHub"]
+        if (!url) return;
+        window.open(url, "_blank")
+        }}>
         {/* Left Content */}
-        <div>
+        <div className=" w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
             {/* Need Image */}
-            <p>Image</p>
+            <Image src={img} alt={`${name} screenshot`} width={200} height={48} className="rounded w-full border-2"/>
         </div>
 
         {/* Right Content */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 w-full lg:w-3/4">
 
             {/* Project Name */}
-            <h3 className="font-medium">{name} ↗</h3>
+            <a><h3 className={`font-medium text-slate-200 ${isHovered ? '' : 'group-hover/project:text-teal-400 '}`}><span className="flex flex-row items-center gap-1">{name}{(links["Live"] || links["GitHub"]) && arrowUpRightSVG}</span></h3></a>
+            {/* Need to add is hovered to arrow icon and move it to top right  */}
 
             {/* Project Description */}
-            <p className="text-sm text-muted-foreground">{description}</p>
+            <p className="text-sm">{description}</p>
 
             {/* Project Links */}
-            <div className="flex flex-row gap-8">
+            <div className="flex flex-row gap-4">
                 {Object.entries(links).map(([key, value]) => (
-                    <div className="flex flex-row gap-2">
-                       {linkSVG}
+                    <div className="flex flex-row gap-2 items-center text-slate-200 " key={key}>
                         <a
                         key={key}
                         href={value}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm"
+                        onClick={(e) => e.stopPropagation()} // prevent parent click
+                        onMouseEnter={() => setIsHovered(true)} // When the mouse enters the link
+                        onMouseLeave={() => setIsHovered(false)} // When the mouse leaves the link
+                        className="flex flex-row gap-1 items-center text-sm hover:text-teal-400 transition-all duration-100 ease-in-out "
                     >
+                        <span className="transition-colors">{linkSVG}</span>
                         {key}
                     </a>
                     </div>
@@ -56,14 +77,14 @@ export function ProjectCard({ name, description, links, tools }: ProjectCardProp
             {/* Tools */}
             <div className="flex flex-row gap-2">
                 {tools.map((tool) => (
-                    <Badge key={tool} variant="outline" className="text-sm">{tool}</Badge>
+                    <Badge key={tool} variant="outline" className=" rounded font-normal text-sm text-teal-400 bg-teal-400/10">{tool}</Badge>
                 ))}
             </div>
             
         </div>
         
         
-    </a>
+    </div>
     )
     
   }
