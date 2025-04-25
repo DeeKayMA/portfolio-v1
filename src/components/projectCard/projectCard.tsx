@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
+import Link from "next/link"
 
 
 // 
@@ -28,6 +29,8 @@ export function ProjectCard({ name, description, links, tools, img }: ProjectCar
 
     return (
     <div className=" flex flex-col-reverse lg:flex-row gap-10 lg:gap-4 cursor-pointer group/project" 
+    role="link"
+    tabIndex={0}
     onClick={() => {
         //Tries to open the live link, if not available it opens the GitHub link
         // If both are not available, it does nothing
@@ -52,12 +55,10 @@ export function ProjectCard({ name, description, links, tools, img }: ProjectCar
             <p className="text-sm">{description}</p>
 
             {/* Project Links */}
-            <div className="flex flex-row gap-4">
-                {Object.entries(links).map(([key, value]) => (
-                    <div className="flex flex-row gap-2 items-center text-slate-200 " key={key}>
+
+            <div className="flex flex-row gap-2 items-center text-slate-200 ">
                         <a
-                        key={key}
-                        href={value}
+                        href={links["GitHub"]}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()} // prevent parent click
@@ -66,16 +67,12 @@ export function ProjectCard({ name, description, links, tools, img }: ProjectCar
                         className="flex flex-row gap-1 items-center text-sm hover:text-teal-400 transition-all duration-100 ease-in-out "
                     >
                         <span className="transition-colors">{linkSVG}</span>
-                        {key}
+                        <p>GitHub</p>
                     </a>
-                    </div>
-                    
-                    ))}
-
             </div>
 
             {/* Tools */}
-            <div className="flex flex-row gap-2">
+            <div className="flex flex-row gap-2 flex-wrap">
                 {tools.map((tool) => (
                     <Badge key={tool} variant="outline" className=" rounded font-normal text-sm text-teal-400 bg-teal-400/10">{tool}</Badge>
                 ))}

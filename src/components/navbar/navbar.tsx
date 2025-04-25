@@ -1,0 +1,138 @@
+'use client';
+
+import { useState, useEffect } from "react";
+
+export const Navbar = () => {
+    const aTagClass = "flex items-center"
+    const span1Class = "bg-slate-400 w-6 mr-2 h-[0.5px] transition-all duration-200 ease-in-out"
+    const span2Class = "uppercase text-xs font-semibold tracking-widest "
+
+
+    const [activeSection, setActiveSection] = useState<string | null>("about");
+
+    useEffect(() => {
+        const sectionIds = ["about", "projects", "experience", "education"];
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY + window.innerHeight * 0.3;
+            // const scrollPosition = window.scrollY + 100;
+            let found = false;
+
+            for (const sectionId of sectionIds) {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    const sectionTop = section.offsetTop;
+                    const sectionBottom = sectionTop + section.offsetHeight;
+
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                        setActiveSection(sectionId);
+                        found = true;
+                        break;
+                    }
+                }
+            }
+
+            if (!found && window.scrollY < 200) {
+                setActiveSection("about");
+            }
+        }
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        }
+    } , []);
+
+    useEffect(() => {
+        console.log("Active section:", activeSection);
+      }, [activeSection]);
+
+    return(
+        <nav aria-label="Primary navigation menu inpage links" className="mt-12 lg:block hidden"> 
+          <ul className="flex flex-col gap-8">
+            {/* About Nav Button */}
+            <li className="w-fit">
+              <a href="#about" className={`group/aboutbtn ${aTagClass}`} aria-label="About">
+                <span className={`
+                    ${span1Class}
+                    group-hover/aboutbtn:h-px 
+                    group-hover/aboutbtn:bg-slate-200 
+                    group-hover/aboutbtn:w-24
+                    ${activeSection === 'about' ? '!h-px !bg-slate-200 !w-24' : ''}
+                `}></span>
+                <span className={`
+                    ${span2Class} 
+                    group-hover/aboutbtn:font-bold 
+                    group-hover/aboutbtn:text-slate-200
+                    ${activeSection === 'about' ? '!font-bold !text-slate-200' : ''} 
+                `}>About</span>
+              </a>
+            </li>
+            
+            {/* Projects Nav Button */}
+    
+            <li className="w-fit">
+              <a href="#projects" className={`group/projectsbtn ${aTagClass}`} aria-label="projects">
+                <span className={`
+                    ${span1Class}
+                    group-hover/projectsbtn:h-px 
+                    group-hover/projectsbtn:bg-slate-200 
+                    group-hover/projectsbtn:w-24
+                    ${activeSection === 'projects' ? '!h-px !bg-slate-200 !w-24' : ''}
+                `}></span>
+                <span className={`
+                    ${span2Class} 
+                    group-hover/projectsbtn:font-bold 
+                    group-hover/projectsbtn:text-slate-200
+                    ${activeSection === 'projects' ? '!font-bold !text-slate-200' : ''} 
+                `}>Projects</span>
+              </a>
+            </li>
+
+            {/* Experience Nav Button */}
+        
+            <li className="w-fit">
+              <a href="#experience" className={`group/exbtn ${aTagClass}`} aria-label="Experience">
+                <span className={`
+                    ${span1Class}
+                    group-hover/exbtn:h-px 
+                    group-hover/exbtn:bg-slate-200 
+                    group-hover/exbtn:w-24
+                    ${activeSection === 'experience' ? '!h-px !bg-slate-200 !w-24' : ''}
+                `}></span>
+                <span className={`
+                    ${span2Class} 
+                    group-hover/exbtn:font-bold 
+                    group-hover/exbtn:text-slate-200 
+                    ${activeSection === 'experience' ? '!font-bold !text-slate-200' : ''}
+                `}>Experience</span>
+              </a>
+            </li>
+
+            {/* Education Nav Button */}
+
+            <li className="w-fit">
+              <a href="#education" className={`group/edubtn ${aTagClass}`} aria-label="Education">
+                <span className={`
+                    ${span1Class}
+                    group-hover/edubtn:h-px 
+                    group-hover/edubtn:bg-slate-200 
+                    group-hover/edubtn:w-24
+                    ${activeSection === 'education' ? '!h-px !bg-slate-200 !w-24' : ''}
+                `}></span>
+                <span className={`
+                    ${span2Class} 
+                    group-hover/edubtn:font-bold 
+                    group-hover/edubtn:text-slate-200
+                    ${activeSection === 'education' ? '!font-bold !text-slate-200' : ''}
+                `}>Education</span>
+              </a>
+            </li>
+
+
+
+
+
+
+          </ul>
+        </nav>
+    )
+};
