@@ -10,7 +10,7 @@ export default function Home() {
   const projectListItem = "list-none lg:p-4 group-hover/list:opacity-40 hover:opacity-100 hover:bg-slate-800/50 border border-slate-800/0 hover:border-slate-800/50 hover:border-t-slate-700/50 hover:shadow-sm hover:shadow-slate-950/10 transition-all duration-300 ease-in-out rounded mb-12"
   const experienceListItem = "list-none lg:p-4 group-hover/xp:opacity-40 hover:opacity-100 hover:bg-slate-800/50 border border-slate-800/0 hover:border-slate-800/50 hover:border-t-slate-700/50 hover:shadow-sm hover:shadow-slate-950/10 transition-all duration-300 ease-in-out rounded mb-12"
   const educationListItem = "list-none lg:p-4 group-hover/edu:opacity-40 hover:opacity-100 hover:bg-slate-800/50 border border-slate-800/0 hover:border-slate-800/50 hover:border-t-slate-700/50 hover:shadow-sm hover:shadow-slate-950/10 transition-all duration-300 ease-in-out rounded mb-12"
-  const sectionTitle = " lg:hidden text-xl font-semibold lg:text-md lg:font-medium lg:p-4 py-4 mb-4 sticky top-0 bg-slate-900 text-slate-200 z-10"
+  const sectionTitle = " lg:hidden text-xl font-semibold lg:text-md lg:font-medium lg:p-4 py-4 mb-4 sticky top-0 -mx-6 px-6 md:-mx-16 md:px-16 backdrop-blur-md text-slate-200 z-10"
   const footerAnchor = "text-slate-200 hover:text-teal-400 cursor-pointer"
   
   return (
@@ -54,7 +54,7 @@ export default function Home() {
     <main className=" z-1 lg:w-[55%] flex flex-col gap-24 lg:gap-40">
       {/* ABOUT */}
       <section aria-label="About me" id="about" className="lg:px-4">
-        <h2 className=" lg:hidden text-xl font-semibold py-4 mb-4 sticky top-0 bg-slate-900 text-slate-200 z-10">About</h2>
+        <h2 className="-mx-6 px-6 md:-mx-16 md:px-16 backdrop-blur-md lg:hidden text-xl font-semibold py-4 mb-4 sticky top-0 text-slate-200 z-10">About</h2>
         <p>Hi, I’m <a href="https://linkedin.com/in/diquankerr" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="text-slate-200 hover:text-teal-400 cursor-pointer">
           Diquan</a>. I began my career as a product manager, but customising WordPress sites in my spare time sparked a genuine passion for UX and front-end development. That interest quickly grew into a hands-on experience with HTML, CSS, JavaScript, React, and Next.js—fuelling my drive to build thoughtful, user-focused solutions. Today, I’m focused on growing as a front-end engineer, combining technical skills with product insight to create meaningful digital experiences.</p>
       </section>
