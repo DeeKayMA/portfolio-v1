@@ -4,7 +4,6 @@ import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
-import Link from "next/link"
 
 
 // 
@@ -20,7 +19,6 @@ type ProjectCardProps = {
 
 export function ProjectCard({ name, description, links, tools, img }: ProjectCardProps) {
     const [isHovered, setIsHovered] = useState(false)
-    const router = useRouter()
     const linkSVG = <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
     const arrowUpRightSVG = <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`${isHovered ? '' : 'transition-all duration-100 ease-in-out group-hover/project:-translate-y-1 group-hover/project:translate-x-1'}`}><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
 
