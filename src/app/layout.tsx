@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Diquan Kerr",
   icons: {
-    icon: "/images/favicon.ico",
-    shortcut: "/images/favicon.ico",
-    apple: "images/favicon.ico",
+    icon: "/app/favicon.ico",
+    shortcut: "/app/favicon.ico",
+    apple: "app/favicon.ico",
   },
   description: "Eveything you need to hire Diquan",
 };
