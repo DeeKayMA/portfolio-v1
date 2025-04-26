@@ -23,6 +23,7 @@ export const Cursor = () => {
     return(
         <div 
         id="custom-cursor"
+        data-testid="custom-cursor"
         className="
             fixed top-0 left-0 w-4 h-4 
             bg-stone-200 
