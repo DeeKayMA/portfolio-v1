@@ -4,12 +4,13 @@ import { useEffect } from "react";
 export const Cursor = () => {
 
     useEffect(() => {
-        const glow = document.getElementById("custom-cursor");
+        const dot = document.getElementById("custom-cursor");
 
         const handleMouseMove = (e: MouseEvent) => {
-            if (glow) {
-                // glow.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-                glow.style.transform = `translate(${e.clientX - glow.offsetWidth / 2}px, ${e.clientY - glow.offsetHeight / 2}px)`;
+            if (dot) {
+                // Set the position of the dot to follow the mouse cursor
+                // The offsetWidth and offsetHeight are used to center the dot on the cursor
+                dot.style.transform = `translate(${e.clientX - dot.offsetWidth / 2}px, ${e.clientY - dot.offsetHeight / 2}px)`;
             }
         };
 
@@ -20,18 +21,6 @@ export const Cursor = () => {
 
 
     return(
-        // <div 
-        // id="cursor-glow"
-        // className="
-        //     z-0 fixed top-0 left-0 w-[600px] h-[600px] 
-        //     blur-[200px] pointer-events-none 
-        //     transition-transform duration-500 ease-out 
-        //     rounded-full
-        //     opacity-20
-        //     bg-radial from-amber-400/30 from-30% to-orange-400/25
-        // "
-        // // bg-radial from-amber-400/30 from-30% to-orange-400/25
-        // />
         <div 
         id="custom-cursor"
         className="
