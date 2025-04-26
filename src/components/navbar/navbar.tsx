@@ -61,8 +61,8 @@ export const Navbar = () => {
                 <span className={`
                     ${span2Class} 
                     group-hover/aboutbtn:font-bold 
-                    group-hover/aboutbtn:text-stone-200
-                    ${activeSection === 'about' ? '!font-bold !text-stone-200' : ''} 
+                    group-hover/aboutbtn:text-[#FFFFFF]
+                    ${activeSection === 'about' ? '!font-bold !text-[#FFFFFF]' : ''} 
                 `}>About</span>
               </a>
             </li>
@@ -81,8 +81,8 @@ export const Navbar = () => {
                 <span className={`
                     ${span2Class} 
                     group-hover/projectsbtn:font-bold 
-                    group-hover/projectsbtn:text-stone-200
-                    ${activeSection === 'projects' ? '!font-bold !text-stone-200' : ''} 
+                    group-hover/projectsbtn:text-[#FFFFFF]
+                    ${activeSection === 'projects' ? '!font-bold !text-[#FFFFFF]' : ''} 
                 `}>Projects</span>
               </a>
             </li>
@@ -101,8 +101,8 @@ export const Navbar = () => {
                 <span className={`
                     ${span2Class} 
                     group-hover/exbtn:font-bold 
-                    group-hover/exbtn:text-stone-200 
-                    ${activeSection === 'experience' ? '!font-bold !text-stone-200' : ''}
+                    group-hover/exbtn:text-[#FFFFFF] 
+                    ${activeSection === 'experience' ? '!font-bold !text-[#FFFFFF]' : ''}
                 `}>Experience</span>
               </a>
             </li>
@@ -121,8 +121,8 @@ export const Navbar = () => {
                 <span className={`
                     ${span2Class} 
                     group-hover/edubtn:font-bold 
-                    group-hover/edubtn:text-stone-200
-                    ${activeSection === 'education' ? '!font-bold !text-stone-200' : ''}
+                    group-hover/edubtn:text-[#FFFFFF]
+                    ${activeSection === 'education' ? '!font-bold !text-[#FFFFFF]' : ''}
                 `}>Education</span>
               </a>
             </li>

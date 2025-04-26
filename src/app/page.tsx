@@ -10,16 +10,16 @@ export default function Home() {
   const projectListItem = "list-none lg:p-4 group-hover/list:opacity-40 hover:opacity-100 hover:bg-stone-800/50 border border-stone-800/0 hover:border-stone-800/50 hover:border-t-stone-700/50 hover:shadow-sm hover:shadow-stone-950/10 transition-all duration-300 ease-in-out rounded mb-12"
   const experienceListItem = "list-none lg:p-4 group-hover/xp:opacity-40 hover:opacity-100 hover:bg-stone-800/50 border border-stone-800/0 hover:border-stone-800/50 hover:border-t-stone-700/50 hover:shadow-sm hover:shadow-stone-950/10 transition-all duration-300 ease-in-out rounded mb-12"
   const educationListItem = "list-none lg:p-4 group-hover/edu:opacity-40 hover:opacity-100 hover:bg-stone-800/50 border border-stone-800/0 hover:border-stone-800/50 hover:border-t-stone-700/50 hover:shadow-sm hover:shadow-stone-950/10 transition-all duration-300 ease-in-out rounded mb-12"
-  const sectionTitle = " lg:hidden text-xl font-semibold lg:text-md lg:font-medium lg:p-4 py-4 mb-4 sticky top-0 -mx-6 px-6 md:-mx-16 md:px-16 backdrop-blur-md text-stone-200 z-10"
-  const footerAnchor = "text-stone-200 hover:text-amber-400 cursor-none"
+  const sectionTitle = " lg:hidden text-xl font-semibold lg:text-md lg:font-medium lg:p-4 py-4 mb-4 sticky top-0 -mx-6 px-6 md:-mx-16 md:px-16 backdrop-blur-md text-[#FFFFFF] font-medium z-10"
+  const footerAnchor = "text-[#FFFFFF] font-medium hover:text-amber-400 cursor-none"
   
   return (
-    <div className="z-0 bg-stone-900 text-stone-400 flex flex-col lg:flex-row lg:min-h-screen m-0 py-12 px-6 md:py-16 md:px-16 lg:p-24 lg:gap-4 gap-16" >
+    <div className="z-0 bg-stone-950 flex flex-col lg:flex-row lg:min-h-screen m-0 py-12 px-6 md:py-16 md:px-16 lg:p-24 lg:gap-4 gap-16" >
     {/* This is the navigation part of the page */}
     <aside aria-label="Sidebar navigation" className="lg:w-[45%] flex flex-col lg:justify-between sticky lg:top-24 gap-4 max-h-[calc(100vh-12rem)]">
       <header className="flex flex-col gap-4">
-        <h1 className="text-[40px] font-bold text-stone-200">Diquan Kerr</h1>
-        <h2 className="text-lg font-medium text-stone-200">Front End Engineer</h2>
+        <h1 className="text-[40px] font-bold text-[#FFFFFF]">Diquan Kerr</h1>
+        <h2 className="text-lg font-medium text-[#FFFFFF]">Front End Engineer</h2>
         <p className="lg:max-w-[61.8%]">Crafting user-first digital experiences for the modern web.</p>
         <Navbar/>
       </header>
@@ -54,8 +54,8 @@ export default function Home() {
     <main className=" z-1 lg:w-[55%] flex flex-col gap-24 lg:gap-40">
       {/* ABOUT */}
       <section aria-label="About me" id="about" className="lg:px-4">
-        <h2 className="-mx-6 px-6 md:-mx-16 md:px-16 backdrop-blur-md lg:hidden text-xl font-semibold py-4 mb-4 sticky top-0 text-stone-200 z-10">About</h2>
-        <p>Hi, I’m <a href="https://linkedin.com/in/diquankerr" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="text-stone-200 hover:text-amber-400 cursor-none">
+        <h2 className="-mx-6 px-6 md:-mx-16 md:px-16 backdrop-blur-md lg:hidden text-xl font-semibold py-4 mb-4 sticky top-0 text-[#FFFFFF] z-10">About</h2>
+        <p>Hi, I’m <a href="https://linkedin.com/in/diquankerr" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="text-[#FFFFFF] hover:text-amber-400 cursor-none">
           Diquan</a>. I began my career as a product manager, but customising WordPress sites in my spare time sparked a genuine passion for UX and front-end development. That interest quickly grew into a hands-on experience with HTML, CSS, JavaScript, React, and Next.js—fuelling my drive to build thoughtful, user-focused solutions. Today, I’m focused on growing as a front-end engineer, combining technical skills with product insight to create meaningful digital experiences.</p>
       </section>
       {/* PROJECTS */}

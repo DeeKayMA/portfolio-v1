@@ -45,7 +45,7 @@ export function ProjectCard({ name, description, links, tools, img }: ProjectCar
         <div className="flex flex-col gap-4 w-full lg:w-3/4">
 
             {/* Project Name */}
-            <a><h3 className={`font-medium text-stone-200 ${isHovered ? '' : 'group-hover/project:text-amber-400 '}`}><span className="flex flex-row items-center gap-1">{name}{(links["Live"] || links["GitHub"]) && arrowUpRightSVG}</span></h3></a>
+            <a><h3 className={`font-medium text-[#FFFFFF] ${isHovered ? '' : 'group-hover/project:text-amber-400 '}`}><span className="flex flex-row items-center gap-1">{name}{(links["Live"] || links["GitHub"]) && arrowUpRightSVG}</span></h3></a>
             {/* Need to add is hovered to arrow icon and move it to top right  */}
 
             {/* Project Description */}
@@ -53,7 +53,7 @@ export function ProjectCard({ name, description, links, tools, img }: ProjectCar
 
             {/* Project Links */}
 
-            <div className="flex flex-row gap-2 items-center text-stone-200 ">
+            <div className="flex flex-row gap-2 items-center text-[#FFFFFF] ">
                         <a
                         href={links["GitHub"]}
                         target="_blank"
