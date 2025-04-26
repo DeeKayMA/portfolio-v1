@@ -72,7 +72,7 @@ export default function Home() {
                 // "GitHub": "https://github.com/DeeKayMA/reddit_micro"
               }}
               tools={["Next.js", "Tailwind CSS", "Pokémon API", "Vercel"]}
-              img="/images/placeholder-image.jpg"
+              img="/images/Pokedex.jpg"
             />
             </li>
           {/* Reddit Micro Project */}
@@ -98,7 +98,7 @@ export default function Home() {
               "GitHub": "https://github.com/DeeKayMA/jamming"
             }}
             tools={["React", "CSS", "Spotify API", "Netlify"]}
-            img="/images/placeholder-image.jpg"
+            img="/images/Jamming Placeholder.jpg"
           />
           </li>
           {/* Portfolio V1 Project */}
@@ -111,7 +111,7 @@ export default function Home() {
               "GitHub": "https://github.com/DeeKayMA/portfolio-v1"
             }}
             tools={["Next.js", "Tailwind CSS", "ShadCN", "Vercel"]}
-            img="/images/placeholder-image.jpg"
+            img="/images/Portfolio.png"
           />
           </li>
         </ul>
