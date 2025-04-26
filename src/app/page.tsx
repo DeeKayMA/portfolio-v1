@@ -107,8 +107,8 @@ export default function Home() {
             name="Portfolio"
             description="My V1.0 portfolio buit with Next.js and Tailwind CSS."
             links={{
-              "Live": "https://diquan.net",
-              "GitHub": "https://github.com/DeeKayMA/portfolio-v1"
+              // "Live": "https://diquan.net",
+              // "GitHub": "https://github.com/DeeKayMA/portfolio-v1"
             }}
             tools={["Next.js", "Tailwind CSS", "ShadCN", "Vercel"]}
             img="/images/Portfolio.png"

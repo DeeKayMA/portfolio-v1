@@ -52,7 +52,7 @@ export function ProjectCard({ name, description, links, tools, img }: ProjectCar
             <p className="text-sm">{description}</p>
 
             {/* Project Links */}
-
+            {(links["GitHub"])&& 
             <div className="flex flex-row gap-2 items-center text-stone-50 ">
                         <a
                         href={links["GitHub"]}
@@ -67,6 +67,8 @@ export function ProjectCard({ name, description, links, tools, img }: ProjectCar
                         <p>GitHub</p>
                     </a>
             </div>
+            }
+            
 
             {/* Tools */}
             <div className="flex flex-row gap-2 flex-wrap">
