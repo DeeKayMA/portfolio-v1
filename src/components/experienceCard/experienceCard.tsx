@@ -20,7 +20,7 @@ export function ExperienceCard({ role, company, description, link, year, tools }
 
 
     return (
-    <a className=" flex flex-col lg:flex-row gap-2 lg:gap-4 cursor-pointer group/experience" 
+    <a className=" flex flex-col lg:flex-row gap-2 lg:gap-4 cursor-none group/experience" 
     href={link}
     target="_blank"
     rel="noopener noreferrer"
@@ -36,7 +36,7 @@ export function ExperienceCard({ role, company, description, link, year, tools }
         <div className="flex flex-col gap-4 w-full lg:w-3/4">
 
             {/* experience Name */}
-            <h3 className={`font-medium flex-wrap text-slate-200 group-hover/experience:text-teal-400 flex flex-row items-center gap-1`}>{role}<span className="text-2xl px-1">·</span>{company}{(link) && arrowUpRightSVG}</h3>
+            <h3 className={`font-medium flex-wrap text-stone-200 group-hover/experience:text-amber-400 flex flex-row items-center gap-1`}>{role}<span className="text-2xl px-1">·</span>{company}{(link) && arrowUpRightSVG}</h3>
 
             {/* Project Description */}
             <p className="text-sm">{description}</p>
@@ -44,7 +44,7 @@ export function ExperienceCard({ role, company, description, link, year, tools }
             {/* Tools */}
         <div className="flex flex-row gap-2 flex-wrap">
                 {tools.map((tool) => (
-                    <Badge key={tool} variant="outline" className=" rounded font-normal text-sm text-teal-400 bg-teal-400/10">{tool}</Badge>
+                    <Badge key={tool} className=" rounded font-normal text-sm text-amber-400 bg-amber-400/10">{tool}</Badge>
                 ))}
         </div>
             

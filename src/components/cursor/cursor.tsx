@@ -20,15 +20,30 @@ export const Cursor = () => {
 
 
     return(
+        // <div 
+        // id="cursor-glow"
+        // className="
+        //     z-0 fixed top-0 left-0 w-[600px] h-[600px] 
+        //     blur-[200px] pointer-events-none 
+        //     transition-transform duration-500 ease-out 
+        //     rounded-full
+        //     opacity-20
+        //     bg-radial from-amber-400/30 from-30% to-orange-400/25
+        // "
+        // // bg-radial from-amber-400/30 from-30% to-orange-400/25
+        // />
         <div 
-        id="cursor-glow"
+        id="custom-cursor"
         className="
-        z0 fixed top-0 left-0 w-[600px] h-[600px] 
-        blur-3xl pointer-events-none 
-        transition-transform duration-0 
-        rounded-full
-        opacity-15
-        bg-radial from-blue-400/25 from-40% to-sky-400/30"
+            fixed top-0 left-0 w-4 h-4 
+            bg-stone-200 
+            rounded-full 
+            pointer-events-none 
+            mix-blend-difference 
+            z-50
+            transition-transform duration-150 ease-out
+        "
         />
+        
     )
 }

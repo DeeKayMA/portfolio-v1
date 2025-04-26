@@ -15,7 +15,7 @@ export function CertificateCard({ certificate, company, description, link, year 
 
 
     return (
-    <a className=" flex flex-col lg:flex-row gap-2 lg:gap-4 cursor-pointer group/education" 
+    <a className=" flex flex-col lg:flex-row gap-2 lg:gap-4 cursor-none group/education" 
     href={link}
     target="_blank"
     rel="noopener noreferrer"
@@ -31,7 +31,7 @@ export function CertificateCard({ certificate, company, description, link, year 
         <div className="flex flex-col gap-4 w-full lg:w-3/4">
 
             {/* education Name */}
-            <h3 className={`font-medium flex-wrap text-slate-200 group-hover/education:text-teal-400 flex flex-row items-center gap-1`}>{certificate}<span className="text-2xl px-1">·</span>{company}{(link) && arrowUpRightSVG}</h3>
+            <h3 className={`font-medium flex-wrap text-stone-200 group-hover/education:text-amber-400 flex flex-row items-center gap-1`}>{certificate}<span className="text-2xl px-1">·</span>{company}{(link) && arrowUpRightSVG}</h3>
 
             {/* education Description */}
             <p className="text-sm">{description}</p>

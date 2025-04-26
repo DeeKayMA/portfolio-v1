@@ -7,19 +7,19 @@ import { CertificateCard } from "@/components/certificateCard/certificateCard";
 import { Navbar } from "@/components/navbar/navbar";
 
 export default function Home() {
-  const projectListItem = "list-none lg:p-4 group-hover/list:opacity-40 hover:opacity-100 hover:bg-slate-800/50 border border-slate-800/0 hover:border-slate-800/50 hover:border-t-slate-700/50 hover:shadow-sm hover:shadow-slate-950/10 transition-all duration-300 ease-in-out rounded mb-12"
-  const experienceListItem = "list-none lg:p-4 group-hover/xp:opacity-40 hover:opacity-100 hover:bg-slate-800/50 border border-slate-800/0 hover:border-slate-800/50 hover:border-t-slate-700/50 hover:shadow-sm hover:shadow-slate-950/10 transition-all duration-300 ease-in-out rounded mb-12"
-  const educationListItem = "list-none lg:p-4 group-hover/edu:opacity-40 hover:opacity-100 hover:bg-slate-800/50 border border-slate-800/0 hover:border-slate-800/50 hover:border-t-slate-700/50 hover:shadow-sm hover:shadow-slate-950/10 transition-all duration-300 ease-in-out rounded mb-12"
-  const sectionTitle = " lg:hidden text-xl font-semibold lg:text-md lg:font-medium lg:p-4 py-4 mb-4 sticky top-0 -mx-6 px-6 md:-mx-16 md:px-16 backdrop-blur-md text-slate-200 z-10"
-  const footerAnchor = "text-slate-200 hover:text-teal-400 cursor-pointer"
+  const projectListItem = "list-none lg:p-4 group-hover/list:opacity-40 hover:opacity-100 hover:bg-stone-800/50 border border-stone-800/0 hover:border-stone-800/50 hover:border-t-stone-700/50 hover:shadow-sm hover:shadow-stone-950/10 transition-all duration-300 ease-in-out rounded mb-12"
+  const experienceListItem = "list-none lg:p-4 group-hover/xp:opacity-40 hover:opacity-100 hover:bg-stone-800/50 border border-stone-800/0 hover:border-stone-800/50 hover:border-t-stone-700/50 hover:shadow-sm hover:shadow-stone-950/10 transition-all duration-300 ease-in-out rounded mb-12"
+  const educationListItem = "list-none lg:p-4 group-hover/edu:opacity-40 hover:opacity-100 hover:bg-stone-800/50 border border-stone-800/0 hover:border-stone-800/50 hover:border-t-stone-700/50 hover:shadow-sm hover:shadow-stone-950/10 transition-all duration-300 ease-in-out rounded mb-12"
+  const sectionTitle = " lg:hidden text-xl font-semibold lg:text-md lg:font-medium lg:p-4 py-4 mb-4 sticky top-0 -mx-6 px-6 md:-mx-16 md:px-16 backdrop-blur-md text-stone-200 z-10"
+  const footerAnchor = "text-stone-200 hover:text-amber-400 cursor-none"
   
   return (
-    <div className="z-0 bg-slate-900 text-slate-400 flex flex-col lg:flex-row lg:min-h-screen m-0 py-12 px-6 md:py-16 md:px-16 lg:p-24 lg:gap-4 gap-16" >
+    <div className="z-0 bg-stone-900 text-stone-400 flex flex-col lg:flex-row lg:min-h-screen m-0 py-12 px-6 md:py-16 md:px-16 lg:p-24 lg:gap-4 gap-16" >
     {/* This is the navigation part of the page */}
     <aside aria-label="Sidebar navigation" className="lg:w-[45%] flex flex-col lg:justify-between sticky lg:top-24 gap-4 max-h-[calc(100vh-12rem)]">
       <header className="flex flex-col gap-4">
-        <h1 className="text-[40px] font-bold text-slate-200">Diquan Kerr</h1>
-        <h2 className="text-lg font-medium text-slate-200">Front End Engineer</h2>
+        <h1 className="text-[40px] font-bold text-stone-200">Diquan Kerr</h1>
+        <h2 className="text-lg font-medium text-stone-200">Front End Engineer</h2>
         <p className="lg:max-w-[61.8%]">Crafting user-first digital experiences for the modern web.</p>
         <Navbar/>
       </header>
@@ -27,22 +27,22 @@ export default function Home() {
       <section aria-label="Social links">
        <ul className="flex flex-row gap-6 lg:gap-4 mt-4 lg:mt-0">
         <li>
-          <a href="https://github.com/DeeKayMA" aria-label="GitHub" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:text-teal-400">
+          <a href="https://github.com/DeeKayMA" aria-label="GitHub" target="_blank" rel="noopener noreferrer" className="cursor-none hover:text-amber-400">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" ><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
           </a>
         </li>
         <li>
-          <a href="https://linkedin.com/in/diquankerr" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:text-teal-400">
+          <a href="https://linkedin.com/in/diquankerr" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="cursor-none hover:text-amber-400">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
           </a>
         </li>
         {/* <li>
-          <a href="https://x.com/Dquan028" aria-label="X" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:text-teal-400">
+          <a href="https://x.com/Dquan028" aria-label="X" target="_blank" rel="noopener noreferrer" className="cursor-none hover:text-amber-400">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
           </a>
         </li> */}
         <li>
-          <a href="mailto:diquankerr@gmail.com" aria-label="Email" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:text-teal-400">
+          <a href="mailto:diquankerr@gmail.com" aria-label="Email" target="_blank" rel="noopener noreferrer" className="cursor-none hover:text-amber-400">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
           </a>
         </li>
@@ -54,8 +54,8 @@ export default function Home() {
     <main className=" z-1 lg:w-[55%] flex flex-col gap-24 lg:gap-40">
       {/* ABOUT */}
       <section aria-label="About me" id="about" className="lg:px-4">
-        <h2 className="-mx-6 px-6 md:-mx-16 md:px-16 backdrop-blur-md lg:hidden text-xl font-semibold py-4 mb-4 sticky top-0 text-slate-200 z-10">About</h2>
-        <p>Hi, I’m <a href="https://linkedin.com/in/diquankerr" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="text-slate-200 hover:text-teal-400 cursor-pointer">
+        <h2 className="-mx-6 px-6 md:-mx-16 md:px-16 backdrop-blur-md lg:hidden text-xl font-semibold py-4 mb-4 sticky top-0 text-stone-200 z-10">About</h2>
+        <p>Hi, I’m <a href="https://linkedin.com/in/diquankerr" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="text-stone-200 hover:text-amber-400 cursor-none">
           Diquan</a>. I began my career as a product manager, but customising WordPress sites in my spare time sparked a genuine passion for UX and front-end development. That interest quickly grew into a hands-on experience with HTML, CSS, JavaScript, React, and Next.js—fuelling my drive to build thoughtful, user-focused solutions. Today, I’m focused on growing as a front-end engineer, combining technical skills with product insight to create meaningful digital experiences.</p>
       </section>
       {/* PROJECTS */}

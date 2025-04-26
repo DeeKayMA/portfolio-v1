@@ -25,7 +25,7 @@ export function ProjectCard({ name, description, links, tools, img }: ProjectCar
 
 
     return (
-    <div className=" flex flex-col-reverse lg:flex-row gap-10 lg:gap-4 cursor-pointer group/project" 
+    <div className=" flex flex-col-reverse lg:flex-row gap-10 lg:gap-4 cursor-none group/project" 
     role="link"
     tabIndex={0}
     onClick={() => {
@@ -45,7 +45,7 @@ export function ProjectCard({ name, description, links, tools, img }: ProjectCar
         <div className="flex flex-col gap-4 w-full lg:w-3/4">
 
             {/* Project Name */}
-            <a><h3 className={`font-medium text-slate-200 ${isHovered ? '' : 'group-hover/project:text-teal-400 '}`}><span className="flex flex-row items-center gap-1">{name}{(links["Live"] || links["GitHub"]) && arrowUpRightSVG}</span></h3></a>
+            <a><h3 className={`font-medium text-stone-200 ${isHovered ? '' : 'group-hover/project:text-amber-400 '}`}><span className="flex flex-row items-center gap-1">{name}{(links["Live"] || links["GitHub"]) && arrowUpRightSVG}</span></h3></a>
             {/* Need to add is hovered to arrow icon and move it to top right  */}
 
             {/* Project Description */}
@@ -53,7 +53,7 @@ export function ProjectCard({ name, description, links, tools, img }: ProjectCar
 
             {/* Project Links */}
 
-            <div className="flex flex-row gap-2 items-center text-slate-200 ">
+            <div className="flex flex-row gap-2 items-center text-stone-200 ">
                         <a
                         href={links["GitHub"]}
                         target="_blank"
@@ -61,7 +61,7 @@ export function ProjectCard({ name, description, links, tools, img }: ProjectCar
                         onClick={(e) => e.stopPropagation()} // prevent parent click
                         onMouseEnter={() => setIsHovered(true)} // When the mouse enters the link
                         onMouseLeave={() => setIsHovered(false)} // When the mouse leaves the link
-                        className="flex flex-row gap-1 items-center text-sm hover:text-teal-400 transition-all duration-100 ease-in-out "
+                        className="flex flex-row gap-1 items-center text-sm hover:text-amber-400 transition-all duration-100 ease-in-out "
                     >
                         <span className="transition-colors">{linkSVG}</span>
                         <p>GitHub</p>
@@ -71,7 +71,7 @@ export function ProjectCard({ name, description, links, tools, img }: ProjectCar
             {/* Tools */}
             <div className="flex flex-row gap-2 flex-wrap">
                 {tools.map((tool) => (
-                    <Badge key={tool} variant="outline" className=" rounded font-normal text-sm text-teal-400 bg-teal-400/10">{tool}</Badge>
+                    <Badge key={tool} className=" rounded font-normal text-sm text-amber-400 bg-amber-400/10">{tool}</Badge>
                 ))}
             </div>
             

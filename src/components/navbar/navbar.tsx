@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 export const Navbar = () => {
     const aTagClass = "flex items-center"
-    const span1Class = "bg-slate-400 w-6 mr-2 h-[0.5px] transition-all duration-200 ease-in-out"
+    const span1Class = "bg-stone-400 w-6 mr-2 h-[0.5px] transition-all duration-200 ease-in-out"
     const span2Class = "uppercase text-xs font-semibold tracking-widest "
 
 
@@ -54,15 +54,15 @@ export const Navbar = () => {
                 <span className={`
                     ${span1Class}
                     group-hover/aboutbtn:h-px 
-                    group-hover/aboutbtn:bg-slate-200 
+                    group-hover/aboutbtn:bg-stone-200 
                     group-hover/aboutbtn:w-24
-                    ${activeSection === 'about' ? '!h-px !bg-slate-200 !w-24' : ''}
+                    ${activeSection === 'about' ? '!h-px !bg-stone-200 !w-24' : ''}
                 `}></span>
                 <span className={`
                     ${span2Class} 
                     group-hover/aboutbtn:font-bold 
-                    group-hover/aboutbtn:text-slate-200
-                    ${activeSection === 'about' ? '!font-bold !text-slate-200' : ''} 
+                    group-hover/aboutbtn:text-stone-200
+                    ${activeSection === 'about' ? '!font-bold !text-stone-200' : ''} 
                 `}>About</span>
               </a>
             </li>
@@ -74,15 +74,15 @@ export const Navbar = () => {
                 <span className={`
                     ${span1Class}
                     group-hover/projectsbtn:h-px 
-                    group-hover/projectsbtn:bg-slate-200 
+                    group-hover/projectsbtn:bg-stone-200 
                     group-hover/projectsbtn:w-24
-                    ${activeSection === 'projects' ? '!h-px !bg-slate-200 !w-24' : ''}
+                    ${activeSection === 'projects' ? '!h-px !bg-stone-200 !w-24' : ''}
                 `}></span>
                 <span className={`
                     ${span2Class} 
                     group-hover/projectsbtn:font-bold 
-                    group-hover/projectsbtn:text-slate-200
-                    ${activeSection === 'projects' ? '!font-bold !text-slate-200' : ''} 
+                    group-hover/projectsbtn:text-stone-200
+                    ${activeSection === 'projects' ? '!font-bold !text-stone-200' : ''} 
                 `}>Projects</span>
               </a>
             </li>
@@ -94,15 +94,15 @@ export const Navbar = () => {
                 <span className={`
                     ${span1Class}
                     group-hover/exbtn:h-px 
-                    group-hover/exbtn:bg-slate-200 
+                    group-hover/exbtn:bg-stone-200 
                     group-hover/exbtn:w-24
-                    ${activeSection === 'experience' ? '!h-px !bg-slate-200 !w-24' : ''}
+                    ${activeSection === 'experience' ? '!h-px !bg-stone-200 !w-24' : ''}
                 `}></span>
                 <span className={`
                     ${span2Class} 
                     group-hover/exbtn:font-bold 
-                    group-hover/exbtn:text-slate-200 
-                    ${activeSection === 'experience' ? '!font-bold !text-slate-200' : ''}
+                    group-hover/exbtn:text-stone-200 
+                    ${activeSection === 'experience' ? '!font-bold !text-stone-200' : ''}
                 `}>Experience</span>
               </a>
             </li>
@@ -114,15 +114,15 @@ export const Navbar = () => {
                 <span className={`
                     ${span1Class}
                     group-hover/edubtn:h-px 
-                    group-hover/edubtn:bg-slate-200 
+                    group-hover/edubtn:bg-stone-200 
                     group-hover/edubtn:w-24
-                    ${activeSection === 'education' ? '!h-px !bg-slate-200 !w-24' : ''}
+                    ${activeSection === 'education' ? '!h-px !bg-stone-200 !w-24' : ''}
                 `}></span>
                 <span className={`
                     ${span2Class} 
                     group-hover/edubtn:font-bold 
-                    group-hover/edubtn:text-slate-200
-                    ${activeSection === 'education' ? '!font-bold !text-slate-200' : ''}
+                    group-hover/edubtn:text-stone-200
+                    ${activeSection === 'education' ? '!font-bold !text-stone-200' : ''}
                 `}>Education</span>
               </a>
             </li>
