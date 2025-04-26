@@ -61,7 +61,7 @@ export default function Home() {
       {/* PROJECTS */}
       <section aria-label="Projetcs" id="projects" >
         <h2 className={sectionTitle}>Projects</h2>
-        <ul className="group/list">
+        <ul className="group/list flex flex-col gap-4 ">
           {/* Pokétrumps Project */}
           <li className={projectListItem}>
               <ProjectCard
@@ -74,7 +74,7 @@ export default function Home() {
               tools={["Next.js", "Tailwind CSS", "Pokémon API", "Vercel"]}
               img="/images/Pokedex.jpg"
             />
-            </li>
+          </li>
           {/* Reddit Micro Project */}
           <li className={projectListItem}>
             <ProjectCard
@@ -120,7 +120,7 @@ export default function Home() {
       {/* EXPERIENCE */}
       <section aria-label="Experience" id="experience">
         <h2 className={sectionTitle}>Experience</h2>
-        <ul className="group/xp">
+        <ul className="group/xp flex flex-col gap-4">
           <li className={experienceListItem}>
               <ExperienceCard
                 role="Product Manager"
@@ -148,7 +148,7 @@ export default function Home() {
       {/* EDUCATION */}
       <section aria-label="Education" id="education">
         <h2 className={sectionTitle}>Education</h2>
-        <ul className="group/edu">
+        <ul className="group/edu flex flex-col gap-4">
           <li className={educationListItem}>
             <CertificateCard
               certificate="Front End Engineer Career Path"
