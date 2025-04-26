@@ -4,7 +4,7 @@ import { useEffect } from "react";
 export const Cursor = () => {
 
     useEffect(() => {
-        const glow = document.getElementById("cursor-glow");
+        const glow = document.getElementById("custom-cursor");
 
         const handleMouseMove = (e: MouseEvent) => {
             if (glow) {
