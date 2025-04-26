@@ -71,7 +71,7 @@ export function ProjectCard({ name, description, links, tools, img }: ProjectCar
             {/* Tools */}
             <div className="flex flex-row gap-2 flex-wrap">
                 {tools.map((tool) => (
-                    <Badge key={tool} className=" rounded font-normal text-sm text-amber-400 bg-amber-400/10">{tool}</Badge>
+                    <Badge key={tool} className=" rounded font-normal text-sm text-amber-400/80 bg-amber-400/10">{tool}</Badge>
                 ))}
             </div>
             
