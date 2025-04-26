@@ -31,6 +31,8 @@ export const Cursor = () => {
             mix-blend-difference 
             z-50
             transition-transform duration-150 ease-out
+            hidden
+            lg:block
         "
         />
         
