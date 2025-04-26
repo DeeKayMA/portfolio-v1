@@ -66,7 +66,7 @@ export default function Home() {
           <li className={projectListItem}>
               <ProjectCard
               name="Pokétrumps (TBC)"
-              description="A fun little card game using the Pokémon API. Search, create your own Pokémon, and battle in a Top Trumps-style showdown."
+              description="A fun card game using the Pokémon API. Search, create your own Pokémon, and battle in a Top Trumps-style showdown."
               links={{
                 // "Live": "https://redditmicro.netlify.app",
                 // "GitHub": "https://github.com/DeeKayMA/reddit_micro"
