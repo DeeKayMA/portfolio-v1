@@ -13,8 +13,8 @@ export const Navbar = () => {
     useEffect(() => {
         const sectionIds = ["about", "projects", "experience", "education", "techstack"];
         const handleScroll = () => {
-            const scrollPosition = window.scrollY + window.innerHeight * 0.4;
-            // const scrollPosition = window.scrollY + window.innerHeight/2; 
+            // const scrollPosition = window.scrollY + window.innerHeight * 0.4;
+            const scrollPosition = window.scrollY + window.innerHeight/2; 
         
             // const scrollPosition = window.scrollY + 100;
             let found = false;
@@ -52,7 +52,7 @@ export const Navbar = () => {
           <ul className="flex flex-col gap-8">
             {/* About Nav Button */}
             <li className="w-fit">
-              <a href="#about" className={`group/aboutbtn ${aTagClass}`} aria-label="About">
+              <a href="#main" className={`group/aboutbtn ${aTagClass}`} aria-label="About">
                 <span className={`
                     ${span1Class}
                     group-hover/aboutbtn:h-px 
