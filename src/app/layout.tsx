@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-stone-950 font-inter cursor-none text-stone-400 selection:bg-amber-400 selection:text-stone-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-stone-950 font-inter !cursor-none text-stone-400 selection:bg-amber-400 selection:text-stone-900`}
         id="root"
         suppressHydrationWarning={true}
       >

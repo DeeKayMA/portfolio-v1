@@ -96,7 +96,7 @@ export default function Home() {
             description="Search songs, vibe out, and build your own Spotify playlist."
             links={{
               "Live": "https://jamify-dk.netlify.app/",
-              "GitHub": "https://github.com/DeeKayMA/jamming"
+              "GitHub": "https://github.com/DeeKayMA/jamify"
             }}
             tools={["React", "CSS", "Spotify API", "Netlify"]}
             img="/images/Jamify.png"
