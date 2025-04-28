@@ -13,7 +13,8 @@ export const Navbar = () => {
     useEffect(() => {
         const sectionIds = ["about", "projects", "experience", "education", "techstack"];
         const handleScroll = () => {
-            const scrollPosition = window.scrollY + window.innerHeight * 0.3;
+            // const scrollPosition = window.scrollY + window.innerHeight * 0.3;
+            const scrollPosition = window.scrollY + window.innerHeight/2;
             // const scrollPosition = window.scrollY + 100;
             let found = false;
 
@@ -145,12 +146,6 @@ export const Navbar = () => {
                 `}>Tech Stack</span>
               </a>
             </li>
-
-
-
-
-
-
           </ul>
         </nav>
     )
