@@ -11,7 +11,7 @@ export const Navbar = () => {
     const [activeSection, setActiveSection] = useState<string | null>("about");
 
     useEffect(() => {
-        const sectionIds = ["about", "projects", "experience", "education"];
+        const sectionIds = ["about", "projects", "experience", "education", "techstack"];
         const handleScroll = () => {
             const scrollPosition = window.scrollY + window.innerHeight * 0.3;
             // const scrollPosition = window.scrollY + 100;
