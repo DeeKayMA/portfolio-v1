@@ -52,7 +52,7 @@ export const Navbar = () => {
           <ul className="flex flex-col gap-8">
             {/* About Nav Button */}
             <li className="w-fit">
-              <a href="#main" className={`group/aboutbtn ${aTagClass}`} aria-label="About">
+              <a href="#root" className={`group/aboutbtn ${aTagClass}`} aria-label="About">
                 <span className={`
                     ${span1Class}
                     group-hover/aboutbtn:h-px 
