@@ -92,14 +92,14 @@ export default function Home() {
           {/* Jamming Project */}
           <li className={projectListItem}>
             <ProjectCard
-            name="Jamming"
+            name="Jamify"
             description="Search songs, vibe out, and build your own Spotify playlist."
             links={{
               // "Live": "https://github.com/DeeKayMA/jamming",
               "GitHub": "https://github.com/DeeKayMA/jamming"
             }}
             tools={["React", "CSS", "Spotify API", "Netlify"]}
-            img="/images/Jamming Placeholder.jpg"
+            img="/images/Jamify.png"
           />
           </li>
           {/* Portfolio V1 Project */}
