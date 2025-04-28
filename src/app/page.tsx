@@ -5,6 +5,7 @@ import { ProjectCard } from "@/components/projectCard/projectCard";
 import {ExperienceCard} from "@/components/experienceCard/experienceCard";
 import { CertificateCard } from "@/components/certificateCard/certificateCard";
 import { Navbar } from "@/components/navbar/navbar";
+import { TechStackCard } from "@/components/techStackCard/teckStackCard";
 
 export default function Home() {
   const projectListItem = "list-none lg:p-4 group-hover/list:opacity-40 hover:opacity-100 hover:bg-stone-800/50 border border-stone-800/0 hover:border-stone-800/50 hover:border-t-stone-700/50 hover:shadow-sm hover:shadow-stone-950/10 transition-all duration-300 ease-in-out rounded mb-12"
@@ -144,7 +145,6 @@ export default function Home() {
         </ul>
         
       </section>
-
       {/* EDUCATION */}
       <section aria-label="Education" id="education">
         <h2 className={sectionTitle}>Education</h2>
@@ -170,6 +170,11 @@ export default function Home() {
          
         </ul>
 
+      </section>
+      {/* TECH STACK */}
+      <section aria-label="Tech Stack" id="techstack">
+        <h2 className={sectionTitle}>Tech Stack</h2>
+        <TechStackCard techstack={["HTML", "CSS", "JavaScript", "React", "Next.js", "Redux", "Tailwind CSS", "Node.js", "Git", "GitHub", "Vercel", "Netlify", "Figma", "Chat GPT"]} />
       </section>
 
       <footer className="lg:px-4">

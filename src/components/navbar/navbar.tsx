@@ -126,6 +126,25 @@ export const Navbar = () => {
                 `}>Education</span>
               </a>
             </li>
+            {/* Tech Stack Nav Button */}
+
+            <li className="w-fit">
+              <a href="#techstack" className={`group/tech ${aTagClass}`} aria-label="Tech Stack">
+                <span className={`
+                    ${span1Class}
+                    group-hover/techbtn:h-px 
+                    group-hover/techbtn:bg-stone-200 
+                    group-hover/techbtn:w-24
+                    ${activeSection === 'techstack' ? '!h-px !bg-stone-200 !w-24' : ''}
+                `}></span>
+                <span className={`
+                    ${span2Class} 
+                    group-hover/techbtn:font-bold 
+                    group-hover/techbtn:text-stone-50
+                    ${activeSection === 'education' ? '!font-bold !text-stone-50' : ''}
+                `}>Tech Stack</span>
+              </a>
+            </li>
 
 
 
