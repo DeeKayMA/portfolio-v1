@@ -172,7 +172,7 @@ export default function Home() {
 
       </section>
       {/* TECH STACK */}
-      <section aria-label="Tech Stack" id="techstack">
+      <section aria-label="Tech Stack" id="techstack" className="lg:px-4">
         <h2 className={sectionTitle}>Tech Stack</h2>
         <TechStackCard techstack={["HTML", "CSS", "JavaScript", "React", "Next.js", "Redux", "Tailwind CSS", "Node.js", "Git", "GitHub", "Vercel", "Netlify", "Figma", "Chat GPT"]} />
       </section>

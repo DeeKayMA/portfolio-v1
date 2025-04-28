@@ -141,7 +141,7 @@ export const Navbar = () => {
                     ${span2Class} 
                     group-hover/techbtn:font-bold 
                     group-hover/techbtn:text-stone-50
-                    ${activeSection === 'education' ? '!font-bold !text-stone-50' : ''}
+                    ${activeSection === 'techstack' ? '!font-bold !text-stone-50' : ''}
                 `}>Tech Stack</span>
               </a>
             </li>
