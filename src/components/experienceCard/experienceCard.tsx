@@ -20,7 +20,7 @@ export function ExperienceCard({ role, company, description, link, year, tools }
 
 
     return (
-    <a className=" flex flex-col lg:flex-row gap-2 lg:gap-4 cursor-none group/experience" 
+    <a className=" flex flex-col lg:flex-row gap-2 lg:gap-4  group/experience" 
     href={link}
     target="_blank"
     rel="noopener noreferrer"

@@ -15,7 +15,7 @@ export function CertificateCard({ certificate, company, description, link, year 
 
 
     return (
-    <a className=" flex flex-col lg:flex-row gap-2 lg:gap-4 cursor-none group/education" 
+    <a className=" flex flex-col lg:flex-row gap-2 lg:gap-4  group/education" 
     href={link}
     target="_blank"
     rel="noopener noreferrer"

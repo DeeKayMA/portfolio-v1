@@ -25,7 +25,7 @@ export function ProjectCard({ name, description, links, tools, img }: ProjectCar
 
 
     return (
-    <div className=" flex flex-col-reverse lg:flex-row gap-4 cursor-none group/project" 
+    <div className=" flex flex-col-reverse lg:flex-row gap-4  group/project" 
     role="link"
     tabIndex={0}
     onClick={() => {
