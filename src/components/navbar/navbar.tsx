@@ -131,7 +131,7 @@ export const Navbar = () => {
             {/* Tech Stack Nav Button */}
 
             <li className="w-fit">
-              <a href="#techstack" className={`group/tech ${aTagClass}`} aria-label="Tech Stack">
+              <a href="#techstack" className={`group/techbtn ${aTagClass}`} aria-label="Tech Stack">
                 <span className={`
                     ${span1Class}
                     group-hover/techbtn:h-px 
