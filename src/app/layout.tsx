@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     shortcut: "/images/favicon.ico",
     apple: "images/favicon.ico",
   },
-  description: "Eveything you need to hire Diquan",
+  description: "Diquan Kerr Portfolio - Front End Engineer",
 };
 
 export default function RootLayout({
