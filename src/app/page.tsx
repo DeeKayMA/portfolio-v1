@@ -154,8 +154,8 @@ export default function Home() {
               certificate="Front End Engineer Career Path"
               company="Codecademy"
               year="2025"
-              description="Codecademy’s Front-End Engineer Career Path — covered HTML, CSS, JavaScript, React, Redux, Git, and web design fundamentals to build responsive, interactive web applications."
-              link="https://www.codecademy.com"
+              description="Studied HTML, CSS, JavaScript, React, Redux, Git, and web design to build responsive, interactive web applications. Applied design and SEO best practices, used Git and GitHub for version control and collaboration, tested applications with Jest and Enzyme, deployed with Netlify, and honed front-end engineering interview skills."
+              link="https://www.codecademy.com/profiles/DeeKay_MA/certificates/2682884a0719474f96407efe432fdd87"
               />
           </li>
           <li className={educationListItem}>
