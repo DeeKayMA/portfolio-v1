@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 
 export const Navbar = () => {
-    const aTagClass = "flex items-center"
+    const aTagClass = "flex items-center cursor-pointer"
     const span1Class = "bg-stone-400 w-6 mr-2 h-[0.5px] transition-all duration-200 ease-in-out"
     const span2Class = "uppercase text-xs font-semibold tracking-widest "
 

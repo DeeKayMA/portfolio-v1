@@ -117,9 +117,9 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
-*, body{
+/* *, body{
   cursor: none !important;
-}
+} */
 
 /* @layer base {
   * {
