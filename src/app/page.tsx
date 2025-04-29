@@ -57,7 +57,7 @@ export default function Home() {
       <section aria-label="About me" id="about" className="lg:px-4">
         <h2 className="-mx-6 px-6 md:-mx-16 md:px-16 backdrop-blur-md lg:hidden text-xl font-semibold py-4 mb-4 sticky top-0 text-stone-50 z-10">About</h2>
         <p>Hi, I am <a href="https://linkedin.com/in/diquankerr" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="text-stone-50 hover:text-amber-400 font-meidum ">
-          Diquan</a>. I began my career as a product manager, but customising WordPress sites in my spare time ignited my passion for UX and front-end development. This newfound interest quickly evolved into hands-on experience with HTML, CSS, JavaScript, React, and Next.js. Most recently, I completed Codecademy's Front-End Engineering Career Path, further honing my technical skills. Today, I am focused on growing as a front-end engineer, combining my technical expertise with product insight to craft meaningful, user-centric digital experiences.</p>
+          Diquan</a>. I began my career as a product manager, but customising WordPress sites in my spare time ignited my passion for UX and front-end development. This newfound interest quickly evolved into hands-on experience with HTML, CSS, JavaScript, React, and Next.js. Most recently, I completed Codecademy&apos;s Front-End Engineering Career Path, further honing my technical skills. Today, I am focused on growing as a front-end engineer, combining my technical expertise with product insight to craft meaningful, user-centric digital experiences.</p>
       </section>
       {/* PROJECTS */}
       <section aria-label="Projetcs" id="projects" >
