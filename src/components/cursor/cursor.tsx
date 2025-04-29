@@ -26,7 +26,7 @@ export const Cursor = () => {
         data-testid="custom-cursor"
         className="
             fixed top-0 left-0 w-4 h-4 
-            bg-stone-200 
+            bg-stone-50 
             rounded-full 
             pointer-events-none 
             mix-blend-difference 
