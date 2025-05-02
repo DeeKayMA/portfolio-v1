@@ -120,7 +120,7 @@ export default function Home() {
           <li className={projectListItem}>
             <ProjectCard
             name="Portfolio"
-            description="My V1.0 portfolio buit with Next.js and Tailwind CSS."
+            description="My v1.0 portfolio built with Next.js and Tailwind CSS."
             links={{
               "Live": "https://diquan.net",
               "GitHub": "https://github.com/DeeKayMA/portfolio-v1"
