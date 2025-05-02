@@ -64,8 +64,21 @@ export default function Home() {
       <section aria-label="Projetcs" id="projects" >
         <h2 className={sectionTitle}>Projects</h2>
         <ul className="group/list flex flex-col gap-4 ">
-          {/* Pokétrumps Project */}
+          {/* Tracka Project */}
           <li className={projectListItem}>
+              <ProjectCard
+              name="Trackr (TBA)"
+              description="A job application tracker that allows users to manage their job applications, including tracking status, deadlines, and notes."
+              links={{
+                // "Live": "https://redditmicro.netlify.app",
+                "GitHub": "https://github.com/DeeKayMA/trackr"
+              }}
+              tools={["Next.js", "Tailwind CSS", "Pokémon API", "Vercel"]}
+              img="/images/placeholder-image.jpg"
+            />
+          </li>
+          {/* Pokétrumps Project */}
+          {/* <li className={projectListItem}>
               <ProjectCard
               name="Pokétrumps (TBC)"
               description="A fun card game using the Pokémon API. Search, create your own Pokémon, and battle in a Top Trumps-style showdown."
@@ -76,7 +89,7 @@ export default function Home() {
               tools={["Next.js", "Tailwind CSS", "Pokémon API", "Vercel"]}
               img="/images/Pokedex.jpg"
             />
-          </li>
+          </li> */}
           {/* Reddit Micro Project */}
           <li className={projectListItem}>
             <ProjectCard
