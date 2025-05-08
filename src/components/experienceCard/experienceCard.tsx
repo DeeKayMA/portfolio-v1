@@ -39,7 +39,7 @@ export function ExperienceCard({ role, company, description, link, year, tools }
             <h3 className={`font-medium flex-wrap text-stone-50 group-hover/experience:text-amber-400 flex flex-row items-center gap-1`}>{role}<span className="text-2xl px-1">·</span>{company}{(link) && arrowUpRightSVG}</h3>
 
             {/* Project Description */}
-            <p className="text-sm">{description}</p>
+            <p className="text-md">{description}</p>
 
             {/* Tools */}
         <div className="flex flex-row gap-2 flex-wrap">

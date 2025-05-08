@@ -49,7 +49,7 @@ export function ProjectCard({ name, description, links, tools, img }: ProjectCar
             {/* Need to add is hovered to arrow icon and move it to top right  */}
 
             {/* Project Description */}
-            <p className="text-sm ">{description}</p>
+            <p className="text-md ">{description}</p>
 
             {/* Project Links */}
             {(links["GitHub"])&& 
@@ -61,7 +61,7 @@ export function ProjectCard({ name, description, links, tools, img }: ProjectCar
                         onClick={(e) => e.stopPropagation()} // prevent parent click
                         onMouseEnter={() => setIsHovered(true)} // When the mouse enters the link
                         onMouseLeave={() => setIsHovered(false)} // When the mouse leaves the link
-                        className="flex flex-row gap-1 items-center text-sm font-medium hover:text-amber-400 transition-all duration-100 ease-in-out "
+                        className="flex flex-row gap-1 items-center lg:text-sm font-medium hover:text-amber-400 transition-all duration-100 ease-in-out "
                     >
                         <span className="transition-colors">{linkSVG}</span>
                         <p>GitHub</p>
