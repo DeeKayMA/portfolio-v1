@@ -64,7 +64,7 @@ export default function Home() {
       <section aria-label="Projetcs" id="projects" >
         <h2 className={sectionTitle}>Projects</h2>
         <ul className="group/list flex flex-col gap-4 ">
-          {/* Tracka Project */}
+          {/* Trackr Project */}
           <li className={projectListItem}>
               <ProjectCard
               name="Trackr (TBA)"
@@ -73,8 +73,8 @@ export default function Home() {
                 // "Live": "https://redditmicro.netlify.app",
                 "GitHub": "https://github.com/DeeKayMA/trackr"
               }}
-              tools={["Next.js", "Tailwind CSS", "Pokémon API", "Vercel"]}
-              img="/images/placeholder-image.jpg"
+              tools={["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "ShadCN", "TanStack Table", "React Hook Form", "Zod", "Vercel"]}
+              img="/images/Trackr - Screenshot.png"
             />
           </li>
           {/* Pokétrumps Project */}
@@ -127,6 +127,7 @@ export default function Home() {
             }}
             tools={["Next.js", "Tailwind CSS", "ShadCN", "Vercel"]}
             img="/images/Portfolio.png"
+            
           />
           </li>
         </ul>
