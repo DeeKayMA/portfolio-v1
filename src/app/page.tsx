@@ -189,7 +189,32 @@ export default function Home() {
       {/* TECH STACK */}
       <section aria-label="Tech Stack" id="techstack" className="lg:px-4">
         <h2 className={sectionTitle}>Tech Stack</h2>
-        <TechStackCard techstack={["HTML", "CSS", "JavaScript", "React", "Next.js", "Redux", "Tailwind CSS", "Node.js", "Git", "GitHub", "Vercel", "Netlify", "Figma", "Chat GPT"]} />
+        <TechStackCard techstack={[
+          "HTML", 
+          "CSS", 
+          "JavaScript",
+          "TypeScript", 
+          "React", 
+          "Next.js",
+          "Tailwind CSS",
+          "ShadCN",
+          "TanStack Table",
+          "React Hook Form",
+          "Zod",
+          "Jest",
+          "Enzyme",
+          "Supabase",
+          "Redux", 
+          "Node.js", 
+          "Git & GitHub", 
+          "Vercel",
+          "Netlify",
+          "Figma",
+          "Adobe XD",
+          "Adobe Photoshop",
+          "Adobe Illustrator", 
+          "Chat GPT"
+          ]} />
       </section>
 
       <footer className="lg:px-4">
