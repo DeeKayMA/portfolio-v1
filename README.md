@@ -5,7 +5,6 @@ This is my personal portfolio site — a visual playground and digital home for 
 
 ![Portfolio Screenshot](https://github.com/DeeKayMA/portfolio-v1/blob/main/public/images/Portfolio.png?raw=true)
 
----
 
 ## 🧠 About
 
@@ -13,7 +12,6 @@ I'm Diquan — I build clean, creative interfaces and tools that balance functio
 
 I take inspiration from minilamist web design, modern aesthetics, and bold layout systems — all expressed with code. This portfolio is designed to be minimalist but characterful, showcasing my capabilities without saying too much.
 
----
 
 ## ⚙️ Features
 
@@ -23,7 +21,6 @@ I take inspiration from minilamist web design, modern aesthetics, and bold layou
 - 🖥️ Responsive across devices
 - 🧩 Custom-coded, no templates
 
----
 
 ## 🛠 Tech Stack
 
@@ -33,7 +30,6 @@ I take inspiration from minilamist web design, modern aesthetics, and bold layou
 - **Vercel** for fast global deployment
 - **Figma** (design planning)
 
----
 
 ## 🚀 Getting Started
 
@@ -52,7 +48,6 @@ npm install
 
 npm run dev
 
----
 
 ## 🔮 Roadmap
 - Add experiment/archive pages
@@ -60,7 +55,6 @@ npm run dev
 - CMS or Notion integration for easy content updates
 - Custom 404 or loading screen
 
----
 
 ## 📄 License
 MIT
