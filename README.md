@@ -52,12 +52,15 @@ npm install
 
 npm run dev
 
+---
 
 ## 🔮 Roadmap
 - Add experiment/archive pages
 - Light/dark mode toggle
 - CMS or Notion integration for easy content updates
 - Custom 404 or loading screen
+
+---
 
 ## 📄 License
 MIT
