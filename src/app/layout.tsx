@@ -18,8 +18,27 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Diquan Kerr",
   description: "Diquan Kerr Portfolio - Front End Engineer",
-  icons: "/images/favicon.ico",
+  icons: {
+    icon: "/images/favicon.ico",
+    shortcut: "/images/favicon.ico",
+    apple: "/images/apple-touch-icon.png",
+    other: [
+      {
+        rel: "icon",
+        url: "/images/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        rel: "icon",
+        url: "/images/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+    ],
+  },
 };
+
 
 export default function RootLayout({
   children,
@@ -28,12 +47,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-          <link rel="shortcut icon" href="/images/favicon.ico" />
-          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png"/>
-          <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png"/>
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-stone-950 font-inter text-stone-400 selection:bg-amber-400 selection:text-stone-900`}
         id="root"
