@@ -39,7 +39,7 @@ export const Navbar = () => {
             //     setActiveSection("about");
             // }
 
-            if (!found || window.scrollY < 200) {
+            if (window.scrollY < 100) {
                 setActiveSection("about");
             }
         }
