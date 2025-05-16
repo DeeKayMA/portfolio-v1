@@ -17,9 +17,9 @@ export const Navbar = () => {
             // const scrollPosition = window.scrollY + window.innerHeight/2; 
 
             const scrollPosition = window.scrollY + window.innerHeight * 0.7; 
-        
             // const scrollPosition = window.scrollY + 100;
-            let found = false;
+
+            // let found = false;
 
             for (const sectionId of sectionIds) {
                 const section = document.getElementById(sectionId);
@@ -29,7 +29,7 @@ export const Navbar = () => {
 
                     if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                         setActiveSection(sectionId);
-                        found = true;
+                        // found = true;
                         break;
                     }
                 }
