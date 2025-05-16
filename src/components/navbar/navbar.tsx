@@ -35,7 +35,11 @@ export const Navbar = () => {
                 }
             }
 
-            if (!found && window.scrollY < 200) {
+            // if (!found && window.scrollY < 200) {
+            //     setActiveSection("about");
+            // }
+
+            if (!found || window.scrollY < 200) {
                 setActiveSection("about");
             }
         }
