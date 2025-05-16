@@ -53,7 +53,7 @@ export default function Home() {
     </aside>
 
     {/* This is the main part of the page */}
-    <main className=" z-1 lg:w-[55%] flex flex-col gap-24 lg:gap-40" id="main">
+    <main className=" z-1 lg:w-[55%] flex flex-col gap-24 lg:gap-40 scroll-hidden" id="main">
       {/* ABOUT */}
       <section aria-label="About me" id="about" className="lg:px-4">
         <h2 className="-mx-6 px-6 md:-mx-16 md:px-16 backdrop-blur-md lg:hidden text-xl font-semibold py-4 mb-4 sticky top-0 text-stone-50 z-10">About</h2>

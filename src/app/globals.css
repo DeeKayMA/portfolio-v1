@@ -131,15 +131,14 @@
 } */
 
 /* Hide scrollbars but allow scrolling */
-html, body {
+.scroll-hidden {
   /* height: 100%; */
   overflow: auto;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
 }
 
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
+.scroll-hidden::-webkit-scrollbar{
   display: none; /* Chrome, Safari, Opera */
 }
 
