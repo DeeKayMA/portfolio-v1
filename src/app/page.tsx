@@ -11,7 +11,7 @@ export default function Home() {
   const projectListItem = "cursor-pointer list-none lg:p-4 group-hover/list:opacity-40 hover:opacity-100 hover:bg-stone-800/50 border border-stone-800/0 hover:border-stone-800/50 hover:border-t-stone-700/50 hover:shadow-sm hover:shadow-stone-950/10 transition-all duration-300 ease-in-out rounded mb-12"
   const experienceListItem = "cursor-pointer list-none lg:p-4 group-hover/xp:opacity-40 hover:opacity-100 hover:bg-stone-800/50 border border-stone-800/0 hover:border-stone-800/50 hover:border-t-stone-700/50 hover:shadow-sm hover:shadow-stone-950/10 transition-all duration-300 ease-in-out rounded mb-12"
   const educationListItem = "cursor-pointer list-none lg:p-4 group-hover/edu:opacity-40 hover:opacity-100 hover:bg-stone-800/50 border border-stone-800/0 hover:border-stone-800/50 hover:border-t-stone-700/50 hover:shadow-sm hover:shadow-stone-950/10 transition-all duration-300 ease-in-out rounded mb-12"
-  const sectionTitle = " lg:hidden text-xl font-semibold lg:text-md lg:font-medium lg:p-4 py-4 mb-4 sticky top-0 -mx-6 px-6 md:-mx-16 md:px-16 backdrop-blur-md text-stone-50 font-medium z-10"
+  const sectionTitle = " lg:hidden text-xl font-semibold lg:text-md lg:font-medium lg:p-4 py-4 mb-4 sticky top-0 -mx-6 px-6 md:-mx-16 md:px-16 backdrop-blur-md text-stone-50 z-10"
   const footerAnchor = "cursor-pointer text-stone-50 font-medium hover:text-amber-400 "
   const socialLinks = "cursor-pointer"
   
