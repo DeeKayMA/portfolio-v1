@@ -161,7 +161,7 @@ export default function Home() {
               />
           </li>
         </ul>
-        <Link href="files/Diquan Kerr CV - Front End Developer V1.4.pdf"><h3 className={'group/resume font-medium text-stone-50 hover-text-amber-400'}><span className="flex flex-row items-center gap-1">See full résume{arrowUpRightSVG}</span></h3></Link>
+        <a href="files/Diquan Kerr CV - Front End Developer V1.4.pdf" aria-label="Résume" target="_blank" rel="noopener noreferrer" className="group/resume:hover-text-amber-400"><h3 className={'group/resume font-medium text-stone-50'}><span className="flex flex-row items-center gap-1">See full résume{arrowUpRightSVG}</span></h3></a>
 
         
       </section>
