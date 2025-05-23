@@ -6,7 +6,6 @@ import {ExperienceCard} from "@/components/experienceCard/experienceCard";
 import { CertificateCard } from "@/components/certificateCard/certificateCard";
 import { Navbar } from "@/components/navbar/navbar";
 import { TechStackCard } from "@/components/techStackCard/teckStackCard";
-import Link from 'next/link';
 
 export default function Home() {
   const projectListItem = "cursor-pointer list-none lg:p-4 group-hover/list:opacity-40 hover:opacity-100 hover:bg-stone-800/50 border border-stone-800/0 hover:border-stone-800/50 hover:border-t-stone-700/50 hover:shadow-sm hover:shadow-stone-950/10 transition-all duration-300 ease-in-out rounded mb-12"
