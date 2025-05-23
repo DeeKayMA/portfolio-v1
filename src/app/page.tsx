@@ -6,6 +6,7 @@ import {ExperienceCard} from "@/components/experienceCard/experienceCard";
 import { CertificateCard } from "@/components/certificateCard/certificateCard";
 import { Navbar } from "@/components/navbar/navbar";
 import { TechStackCard } from "@/components/techStackCard/teckStackCard";
+import Link from 'next/link';
 
 export default function Home() {
   const projectListItem = "cursor-pointer list-none lg:p-4 group-hover/list:opacity-40 hover:opacity-100 hover:bg-stone-800/50 border border-stone-800/0 hover:border-stone-800/50 hover:border-t-stone-700/50 hover:shadow-sm hover:shadow-stone-950/10 transition-all duration-300 ease-in-out rounded mb-12"
@@ -14,6 +15,8 @@ export default function Home() {
   const sectionTitle = " lg:hidden text-xl font-semibold lg:text-md lg:font-medium lg:p-4 py-4 mb-4 sticky top-0 -mx-6 px-6 md:-mx-16 md:px-16 backdrop-blur-md text-stone-50 z-10"
   const footerAnchor = "cursor-pointer text-stone-50 font-medium hover:text-amber-400 "
   const socialLinks = "cursor-pointer"
+  const arrowUpRightSVG = <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={'transition-all duration-100 ease-in-out group-hover/resume:-translate-y-1 group-hover/resumet:translate-x-1'}><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+
   
   return (
     <div className="z-0 bg-stone-950 flex flex-col lg:flex-row lg:min-h-screen m-0 py-12 px-6 md:py-16 md:px-16 lg:p-24 lg:gap-4 gap-16" >
@@ -158,6 +161,8 @@ export default function Home() {
               />
           </li>
         </ul>
+        <Link href="files/Diquan Kerr CV - Front End Developer V1.4.pdf"><h3 className={'group/resume font-medium text-stone-50 hover-text-amber-400'}><span className="flex flex-row items-center gap-1">See full résume{arrowUpRightSVG}</span></h3></Link>
+
         
       </section>
       {/* EDUCATION */}
