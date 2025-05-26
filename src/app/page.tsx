@@ -336,6 +336,7 @@ export default function Home() {
               "Enzyme",
               "Supabase",
               "Redux",
+              "Zustand",
               "Node.js",
               "Git & GitHub",
               "Vercel",
