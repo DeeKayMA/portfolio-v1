@@ -196,7 +196,8 @@ export default function Home() {
                   "Zod",
                   "Vercel",
                 ]}
-                img="/images/Trackr - Screenshot.png"
+                img="/images/Tracker Dashboard Screenshot.png"
+                
               />
             </li>
             {/* Pokétrumps Project */}
