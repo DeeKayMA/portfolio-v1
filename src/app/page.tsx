@@ -180,7 +180,7 @@ export default function Home() {
             <li className={projectListItem}>
               <ProjectCard
                 name="Jobora"
-                description="A job application tracker that allows users to manage their job applications, including tracking status, deadlines, and notes."
+                description="A job application tracker that helps users stay organised with real-time updates, notes, deadlines, and application analytics — all in a clean, responsive, and accessible interface."
                 links={{
                   // "Live": "https://redditmicro.netlify.app",
                   GitHub: "https://github.com/DeeKayMA/trackr",
